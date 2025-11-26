@@ -1,6 +1,5 @@
 
-Sample Pod Definition:
-----------------------
+# Sample Pod Definition:
 
 apiVersion: v1
 kind: Pod 
@@ -8,10 +7,10 @@ metadata:
   name: demo-pod
   labels:
     app: demo
-	  type: front-end
+    type: front-end
 spec: 
   containers:
   - name: nginx 
     image: nginx:1.18
 
---------------
+    
