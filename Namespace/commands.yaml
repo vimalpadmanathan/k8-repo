@@ -1,0 +1,10 @@
+
+# kubectl create namespace dev
+
+# kubectl delete namespace dev
+
+# kubectl get pods --all-namespaces
+
+# kubectl get ns
+
+# kubectl get pods -n kube-system

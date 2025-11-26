@@ -1,0 +1,12 @@
+default is the namespace --- it is created when kubernetes is set up
+
+kube-system    -- which required by k8 --- where no one should delete it.
+ 
+kube-public ---- where users can access it / houses publicly accessible data, like the information needed to communicate with the Kubernetes API
+
+
+where Dev and prod uses same EKS cluster, you can name DEV and Prod as Namespace.
+
+you can assign quota to Namespace --- where it will not access more resources.
+
+

@@ -4,4 +4,10 @@
 
 # kubectl get pods -A -o wide
 
+# kuebctl describe pod [pod-name] -n [namespace]
+
+# kubectl delete pod [pod-name] -n [namespace]
+
+# kuebctl logs [pod-name] -n [namespace]     --- To check the logs for the pod.
+
 # kubectl delete -f pod.yaml
