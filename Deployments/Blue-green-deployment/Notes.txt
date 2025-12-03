@@ -1,0 +1,5 @@
+- a zero-downtime deployment strategy that uses two identical production environments,
+- "blue" and "green," to release new application versions safely
+
+- Rollback (if needed): If a critical issue is detected after the switch,
+- traffic can be immediately and instantly rerouted back to the "blue" environment, which is still running the old version.
