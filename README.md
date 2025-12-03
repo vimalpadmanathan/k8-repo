@@ -1,2 +1,2 @@
-# k8-repo
+# Kubernetes-repo
 Kubernetes commands
