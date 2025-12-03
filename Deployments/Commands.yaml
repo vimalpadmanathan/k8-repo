@@ -2,6 +2,11 @@
 
 # kubectl get deployments -A
 
-# kubectl describe deployment -n k8 [deployment-name]
+# kubectl describe deployment [deployment-name] -n k8 
 
 # kubectl delete -f deployment.yaml
+
+
+# kubectl set image deployment nginx-deployment nginx=nginx:1.19 -n k8  ---- imperative command .. it will not change image version inside the file.
+
+# kubectl edit deployment [deployment-name] -n k8

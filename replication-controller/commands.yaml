@@ -1,7 +1,9 @@
 
 # kubectl apply -f rc.yaml 
 
-# kubectl get replicationcontroller 
+# kubectl get replicationcontroller -A
+
+# kubectl get rc -A
 
 # kubectl get pods -A
 

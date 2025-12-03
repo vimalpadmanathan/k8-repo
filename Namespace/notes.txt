@@ -8,5 +8,3 @@ kube-public ---- where users can access it / houses publicly accessible data, li
 where Dev and prod uses same EKS cluster, you can name DEV and Prod as Namespace.
 
 you can assign quota to Namespace --- where it will not access more resources.
-
-

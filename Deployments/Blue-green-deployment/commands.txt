@@ -1,0 +1,2 @@
+# switch selector to green
+kubectl -n dev patch svc my-app-svc --type='json' -p='[{"op":"replace","path":"/spec/selector/version","value":"green"}]'

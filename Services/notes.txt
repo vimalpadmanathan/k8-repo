@@ -15,3 +15,6 @@ LoadBalancer - Creates an external load balancer in the current cloud (if suppor
 
 
 1. NodePort - 30,000 – 32,767 port # used
+
+For NodePort - check nodeport.yaml
+For ClusterIP - check cluster-ip.yaml

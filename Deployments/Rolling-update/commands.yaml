@@ -1,0 +1,45 @@
+# kubectl apply -f deploy.yml
+
+# kubectl set image deployment deployment-1 nginx=nginx:1.18 -n dev
+
+# kuebctl get all     --- To get all resources details. 
+
+#To see the rollout status:
+---------------------------
+
+# kubectl rollout status deployment deployment-1 -n k8
+
+# kubectl scale –-replicas=10 deployment deployment-rollout -n k8
+
+# History of Rollout :
+--------------------
+
+# kubectl set image deployment deployment-1 nginx=nginx:1.18 -n dev
+
+# kubectl rollout history deployment deployment-1 -n dev
+
+# kubectl rollout status deployment deployment-1 -n dev
+
+
+# kubectl describe deployment deployment-1 -n dev      ===== see the status of strategy type
+
+# kubectl rollout history deployment deployment-rollout -n dev --revision=5
+
+
+# Additional: 
+---------
+
+# kubectl set image deployment/nginx-deployment nginx=nginx:1.25.2 -n k8
+
+# kubectl rollout pause deployment api-rolling-strategy -n k8-app
+
+# kubectl rollout resume deployment/nginx-deployment -n k8
+
+
+# Rollout undo :
+---------------
+# kubectl rollout undo deployment deployment-1 -n dev   --- revert to previous version. 
+
+# kubectl rollout undo deployment nginx-deployment --to-revision=6 -n k8
+
+# kubectl get deployments -A 

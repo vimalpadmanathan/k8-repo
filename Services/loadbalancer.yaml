@@ -1,0 +1,24 @@
+#- Layer 4 (TCP/UDP) load balancer
+#- Works at IP + Port level
+#- No understanding of HTTP/S, paths, or hostnames
+#- Used by Kubernetes Services of type LoadBalancer
+#Use case: 
+#- Expose a single app or microservice externally with its own public IP.
+
+#----------------------------------------------------------
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+  namespace: k8
+  labels:
+    app: nginx1-dep
+spec:
+  type: LoadBalancer
+  selector:
+    app: nginx1-dep
+  ports:
+    - protocol: TCP
+      port: 80        # Service port inside the cluster
+      targetPort: 80  # Container port

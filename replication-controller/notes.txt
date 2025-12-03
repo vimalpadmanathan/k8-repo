@@ -3,4 +3,4 @@
 - replication controller is older method and its manage the pods created by replication controller only
 
 - replicaset is newer version 
-- replicaset doesn't support rolling update directly, instead use deployment.
+- replicaset doesn't support rolling update directly, instead we need to use deployment.

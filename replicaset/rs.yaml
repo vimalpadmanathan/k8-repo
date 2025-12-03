@@ -1,6 +1,6 @@
 #- replicaset is newer version of replicationcontroller
 #- which will have selector additionally 
-#- which manages existing pod also which haven;t created through Replica set.
+#- which manages existing pod also which have't created through Replica set.
 
 apiVersion: apps/v1
 kind: ReplicaSet
