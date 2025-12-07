@@ -1,3 +1,5 @@
 # kubectl get jobs -A
 
+# kubectl describe job [job-name] -A
+
 # kubectl get pods -A
