@@ -1,0 +1,15 @@
+#To Check CM:
+
+# kubectl get cm -A
+
+# kuebctl describe cm [cm-name] -n [namespace]
+
+# kuebctl get cm [cm-name] -n [namespace] -o yaml
+
+#To Check Secrets:
+
+# kubectl get secrets -A
+
+# kuebctl describe secrets [secrets-name] -n [namespace]
+
+# kuebctl get secrets [secrets-name] -n [namespace] -o yaml

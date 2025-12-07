@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: Demo-job
+spec:
+  template:
+    spec:
+      containers:
+        - name: print-message
+          image: busybox
+          command: ["sh", "-c", "echo 'Job executed successfully!' && sleep 5"]
+      restartPolicy: Never
+  backoffLimit: 3

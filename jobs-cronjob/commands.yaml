@@ -1,0 +1,3 @@
+# kubectl get jobs -A
+
+# kubectl get pods -A
