@@ -1,0 +1,8 @@
+List pod and Describe pod
+# kubectl --as=system:serviceaccount:k8:read-user get pods --all-namespaces
+
+# kubectl --as=system:serviceaccount:k8:read-user describe pod -n kube-system calico-node-jghhp
+
+Delete pod
+
+# kubectl --as=system:serviceaccount:k8:read-user describe pod -n [namespace] [pod-name]
