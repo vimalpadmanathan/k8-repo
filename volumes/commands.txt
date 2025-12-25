@@ -1,0 +1,9 @@
+Get PV: 
+# kubectl get persistentvolume 
+
+# kubectl delete persistentvolumeclaim my-claim  
+
+Get PVC:
+# kubectl  get persistentVolumeclaim
+
+# kubectl delete pvc pvc-volume.yaml 
