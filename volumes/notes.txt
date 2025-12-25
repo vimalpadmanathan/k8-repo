@@ -1,0 +1,26 @@
+Volumes:
+
+- to store data
+Persistent Volumes:
+-------------------
+
+- can use pools to claim persistent volume 
+- will do binding based on sufficient capacity
+- access modes - different types available (how should be mounted)
+ - ReadWriteonce
+ - ReadWriteMany
+ - ReadOnlyMany
+ 
+- Relcaim policy 
+  - Retain  
+  - Delete 
+  - Recycle 
+
+Persistent Volume Claims:
+------------------------
+
+- making the storage available to the node 
+- PVC is bound to single PV 
+
+
+Let us claim some of that storage for our application. Create a Persistent Volume Claim with the given specification.

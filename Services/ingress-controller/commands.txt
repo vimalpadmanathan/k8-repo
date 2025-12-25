@@ -1,0 +1,9 @@
+Run Ingress controller to install in the cluster.
+
+# kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.10.1/deploy/static/provider/cloud/deploy.yaml
+
+# Kubectl get svc -A
+
+Then install nginx deployment and services, likewise for apache. 
+
+User loadblancer DNS and in the end of the URL add /apache or /nginx  to see the difference website.
